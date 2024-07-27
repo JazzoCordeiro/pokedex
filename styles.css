@@ -1,0 +1,102 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #000, rgb(96, 135, 158));
+    min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemonImage {
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-68%, 35%);
+    height: 20%;
+}
+
+.pokeData {
+    position: absolute;
+    font-weight: 300;
+    color:rgba(0, 41, 41, 0.795);
+    top: 52%;
+    right: 25%;
+    font-size: clamp(8px, 5vw, 30px);
+}
+
+.pokeName {
+    color:rgba(0, 41, 41);
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 68%;
+    max-width:68%;
+    top: 65%;
+    right: 20%;
+}
+
+.pokeSearch {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-weight: 600;
+    color:rgba(0, 41, 41, 0.795);
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 3px 0 #888, -4px 5px 0 #333;
+}
+
+.buttons {
+    position: absolute;
+    width: 65%;
+    bottom: 10%;
+    left: 31%;
+    transform: translate(-27%, 0);
+    display: flex;
+    gap: 10%;
+}
+
+button {
+    width: 45%;
+    padding: 4%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #444;
+    color: #fff;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 3px 0 #222, -4px 4px 0 #000;
+}
+
+button:active {
+    transition: 0.1s linear;
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
